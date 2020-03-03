@@ -1,0 +1,15 @@
+body {
+	font-family: 'GothamPro Bold';
+}
+
+a {
+	text-decoration: none;
+}
+
+.header__container {
+	max-width: 1030px;
+}
+
+.main__slider_container {
+	max-width: 1030px;
+}
