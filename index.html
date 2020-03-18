@@ -2,35 +2,60 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Project_Axion</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
 	<header class="header">
 		<div class="header-content">
 			<div class="header-container">
-				<div class="header-logo">
-					<a href="#">
-						<img src="image/Axion-logo.png" alt="Logo_Axion">
-					</a>
+				<div class="header-container__inner">
+					<div class="header-logo">
+						<a class="header-logo__logo" href="#">
+							<img src="image/Axion-logo.png" alt="Logo_Axion">
+						</a>
+						<a href="#" class="header-mobile__logo">
+							<img src="image/Axion-logo-1.png" alt="mobile_logo">
+						</a>
+					</div>
+					<nav class="header-menu">
+						<div class="header-menu__humb">
+							<span class="menu-humb_first"></span>
+							<span class="menu-humb_second"></span>
+						</div>
+						<ul class="header-menu__list">
+							<li><a  class="header-menu__link" href="#">SHOP</a></li>
+							<li><a  class="header-menu__link" href="#">NEWS</a></li>
+							<li><a  class="header-menu__link" href="#">TEAM</a></li>
+							<li><a  class="header-menu__link" href="#">LEGACY</a></li>
+							<li><a  class="header-menu__link" href="#">HELP</a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="header-menu">
-					<ul class="header-menu__list">
-						<li><a  class="header-menu__link" href="#">SHOP</a></li>
-						<li><a  class="header-menu__link" href="#">NEWS</a></li>
-						<li><a  class="header-menu__link" href="#">TEAM</a></li>
-						<li><a  class="header-menu__link" href="#">LEGACY</a></li>
-						<li><a  class="header-menu__link" href="#">HELP</a></li>
-					</ul>
-				</nav>
-				<input class="header__search" type="search">
-				<nav class="header-links">
-					<a class="header-links__login" href="#">SING IN</a>
-					<a class="header-links__cart" href="#">CART</a>
-					<a class="header-llinks__location" href="#"><img src="image/united-states.png" alt="lang"></a>
-				</nav>
+				<div class="header-container__wrap">
+					<div class="header-search">
+						<form action="" class="header-search__form">
+							<input class="header-search__search" type="search">
+							<button type="submit" class="header-search__btn"></button>
+						</form>
+					</div>
+					<nav class="header-links">
+						<a class="header-links__login" href="#">SIGN IN</a>
+						<a class="header-links__cart" href="#">CART
+							<div class="header-links__cart-number">
+								<div class="header-links__cart-number__text">1</div>
+							</div>
+						</a>
+						<div class="header-links__location">
+							<img src="image/united-states.png" alt="country">
+						</div>
+					</nav>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -42,15 +67,14 @@
 				<div class="poster-container">
 					<div class="poster-wrap">
 						<div class="poster-wrap__item">
-							<img src="image/slider.jpg" alt="" class="main__slider_item-picture">
+							<h1 class="poster-wrap__title">Legendary footwear reborn</h1>
+							<a class="poster-wrap__link" href="#">
+								<p class="poster-wrap__link-desc">SHOP NOW</p>
+								<div class="poster-wrap__arrow">
+									<img src="image/Arrow.png" alt="arrow">
+								</div>
+							</a>
 						</div>
-						<h1 class="poster-wrap__title">Legendary footwear reborn</h1>
-						<a class="poster-wrap__link" href="#">
-							<p class="poster-wrap__link-desc">SHOP NOW</p>
-							<div class="poster-wrap__arrow">
-								<img src="image/Arrow.png" alt="arrow">
-							</div>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -70,179 +94,210 @@
 
 						<!-- 1st product -->
 						<div class="product-tile tile-1">
-							<div class="product-tile__image">
-								<a href="#" class="product-tile__link">
-									<img src="image/product_1.jpg" alt="product">
-								</a>
-							</div>
 
-							<div class="product-info"> <!-- Product info -->
-								<div class="product-info__name">
-									<a href="#" class="product-info__link">boot</a>
-								</div>
-								<div class="product-info__price">
-									<span class="product-info__sale">100</span>
+							<div class="product-tile__inner">
+								<div class="product-tile__image">
+									<a href="#" class="product-tile__link">
+										<img src="image/product_1.jpg" alt="product">
+									</a>
 								</div>
 
-								<div class="product-swatch"> <!-- colors change -->
-									<ul class="product-list">
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-									</ul>
+								<div class="product-info"> <!-- Product info -->
+									<p class="product-info__name">
+										<a href="#" class="product-info__link">Atlas Black/Rasta Axion</a>
+									</p>
+
+									<div class="product-info__wrap">
+										<!-- <div class="product-info__price"> -->
+											<span class="product-info__sale">$89.00</span>
+										<!-- </div> -->
+
+										<div class="product-swatch"> <!-- colors change -->
+											<ul class="product-list">
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_grey"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_black"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_red"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_yellow"></div>
+													</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
 								</div>
 
 							</div>
 
 						</div>
 
-								<!-- 2nd product -->
+						<!-- 2nd product -->
 						<div class="product-tile tile-2">
-							<div class="product-tile__image">
-								<a href="#" class="product-tile__link">
-									<img src="image/product_2.jpg" alt="product">
-								</a>
+
+							<div class="product-tile__inner">
+								<div class="product-tile__image">
+									<a href="#" class="product-tile__link">
+										<img src="image/product_2.jpg" alt="product">
+									</a>
+								</div>
+
+								<div class="product-info"> <!-- Product info -->
+									<p class="product-info__name">
+										<a href="#" class="product-info__link">Camel/Chili Pepper Axion</a>
+									</p>
+
+									<div class="product-info__wrap">
+										<!-- <div class="product-info__price"> -->
+											<span class="product-info__sale">$74.00</span>
+										<!-- </div> -->
+
+										<div class="product-swatch"> <!-- colors change -->
+											<ul class="product-list">
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_grey"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_orange"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_red"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_yellow"></div>
+													</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+
 							</div>
 
-							<div class="product-info"> <!-- Product info -->
-								<div class="product-info__name">
-									<a href="#" class="product-info__link">boot</a>
-								</div>
-								<div class="product-price">
-									<span class="product-price__sale">100</span>
-								</div>
-
-								<div class="product-swatch"> <!-- colors change -->
-									<ul class="product-list">
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
 						</div>
 
-							<!-- 3rd product-->
+						<!-- 3rd product-->
 						<div class="product-tile tile-3">
-							<div class="product-tile__image">
-								<a href="#" class="product-tile__link">
-									<img src="image/product_3.jpg" alt="product">
-								</a>
+
+							<div class="product-tile__inner">
+								<div class="product-tile__image">
+									<a href="#" class="product-tile__link">
+										<img src="image/product_3.jpg" alt="product">
+									</a>
+								</div>
+
+								<div class="product-info"> <!-- Product info -->
+									<p class="product-info__name">
+										<a href="#" class="product-info__link">Mandel Smoke/Rust Axion</a>
+									</p>
+									
+									<div class="product-info__wrap">
+										<!-- <div class="product-info__price"> -->
+											<span class="product-info__sale">$69.00</span>
+										<!-- </div> -->
+
+										<div class="product-swatch"> <!-- colors change -->
+											<ul class="product-list">
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_grey"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_dark-red"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_indigo"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_yellow"></div>
+													</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+
 							</div>
-							<div class="product-info"> <!-- Product info -->
 
-								<div class="product-info__name">
-									<a href="#" class="product-info__link">boot</a>
-								</div>
-								<div class="product-price">
-									<span class="product-price__sale">100</span>
-								</div>
-
-								<div class="product-swatch"> <!-- colors change -->
-									<ul class="product-list">
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
 						</div>
 
 						<!-- 4th product -->
-						<div class="product-tile tile-3">
-							<div class="product-tile__image">
-								<a href="#" class="product-tile__link">
-									<img src="image/product_4.jpg" alt="product">
-								</a>
+						<div class="product-tile tile-4">
+
+							<div class="product-tile__inner">
+								<div class="product-tile__image">
+									<a href="#" class="product-tile__link">
+										<img src="image/product_4.jpg" alt="product">
+									</a>
+								</div>
+
+								<div class="product-info"> <!-- Product info -->
+									<p class="product-info__name">
+										<a href="#" class="product-info__link">Cloud/Electric Blue Axion</a>
+									</p>
+									
+									<div class="product-info__wrap">
+										<!-- <div class="product-info__price"> -->
+											<span class="product-info__sale">$69.00</span>
+										<!-- </div> -->
+
+										<div class="product-swatch"> <!-- colors change -->
+											<ul class="product-list">
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_grey"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_blue"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_red"></div>
+													</a>
+												</li>
+												<li>
+													<a class="product-list__color" href="#">
+														<div class="product-list__choice color_yellow"></div>
+													</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+
 							</div>
-							<div class="product-info"> <!-- Product info -->
 
-								<div class="product-info__name">
-									<a href="#" class="product-info__link">boot</a>
-								</div>
-								<div class="product-price">
-									<span class="product-price__sale">100</span>
-								</div>
-
-								<div class="product-swatch"> <!-- colors change -->
-									<ul class="product-list">
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-										<li>
-											<a class="product-list__color" href="#">
-												<div class="product-list__choice"></div>
-											</a>
-										</li>
-									</ul>
-								</div>
-
-							</div>
 						</div>
 
 					</div>
@@ -250,11 +305,12 @@
 			</div>
 		</section>
 
-<!-- section #3 information -->
+		<!-- section #3 information -->
 		<section class="info">
 			<div class="info-content">
 				<div class="info-container">
 					<a class="info__item" href="#">
+						<!-- <video src="image/video.jpg"></video> -->
 						<img src="image/video.jpg" alt="video">
 					</a>
 					<div class="info-wrap">
@@ -262,11 +318,11 @@
 							Legendary footwear reborn
 						</h2>
 						<p class="info-wrap__desc">
-						We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.
+							We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.
 						</p>
 						<a class="info-btn" href="#">
 							<div class="info-btn__link">
-							LEARN MORE
+								LEARN MORE
 							</div>
 							<img src="image/Arrow.png" alt="arrow">
 						</a>
@@ -275,13 +331,13 @@
 			</div>
 		</section>
 
-<!-- section #4 stories -->
+		<!-- section #4 stories -->
 		<section class="storie">
 			<div class="storie-content">
 				<div class="storie-container">
 					<div class="storie-title">
 						<h2 class="storie-title__title">
-						RECENT STORIES
+							RECENT STORIES
 						</h2>
 					</div>
 
@@ -292,18 +348,18 @@
 							</a>
 							<div class="storie-wrap">
 								<h4 class="mstorie-wrap__subtitle">
-								Presents Justin Anagoa
+									Presents Justin Anagoa
 								</h4>
 								<p class="storie-wrap__desc">
-								Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
+									Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
 								</p>
 								<a class="storie-wrap-link" href="#">
 									<div class="storie-wrap-link__desc">
-									LEARN MORE
+										LEARN MORE
 									</div>
 								</a>
 								<p class="storie-wrap__data">
-								11.08.2018
+									11.08.2018
 								</p>
 							</div>
 						</div>
@@ -319,15 +375,15 @@
 									First Frontside flip
 								</h4>
 								<p class="storie-wrap__desc">
-								Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. Photo:Yoon Sul
+									Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. Photo:Yoon Sul
 								</p>
 								<a class="storie-wrap-link" href="#">
 									<div class="storie-wrap-link__desc">
-									LEARN MORE
+										LEARN MORE
 									</div>
 								</a>
 								<p class="storie-wrap__data">
-								17.08.2018
+									17.08.2018
 								</p>
 							</div>
 						</div>
@@ -340,18 +396,18 @@
 							</a>
 							<div class="storie-wrap">
 								<h4 class="storie-wrap__subtitle">
-								Kevin Baekkel is Pro
+									Kevin Baekkel is Pro
 								</h4>
 								<p class="storie-wrap__desc">
-								Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.
+									Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.
 								</p>
 								<a class="storie-wrap-link" href="#">
 									<div class="storie-wrap-link__desc">
-									LEARN MORE
+										LEARN MORE
 									</div>
 								</a>
 								<p class="storie-wrap__data">
-								17.08.2018
+									17.08.2018
 								</p>
 							</div>
 						</div>
@@ -514,5 +570,5 @@
 
 		</footer>
 
-</body>
-</html>
+	</body>
+	</html>
