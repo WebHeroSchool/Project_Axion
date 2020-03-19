@@ -138,6 +138,10 @@
 		height: 415px;
 	}
 
+	.poster-wrap {
+	background-position: left -127px center;
+	}
+
 	.poster-wrap__item {
 		max-width: 355px;
 		height: 169px;
@@ -176,7 +180,7 @@
 		display: flex;
 		justify-content: space-between;
 		max-width: 626px;
-		margin: 0 70px;
+		margin: 0 auto;
 	}
 
 	.tile-3 ,
@@ -194,7 +198,7 @@
 	}
 	
 	.product-tile:not(.tile-2) {
-		margin-right: 93px;
+		margin-right: 60px;  /*93px по макету. но не сжимает контейнер*/
 	}
 
 	.product-tile__image {
@@ -209,7 +213,6 @@
 	}
 
 	.product-info {
-		max-width: 252px;
 		padding: 0 0 0 16px;
 	}
 
@@ -222,11 +225,13 @@
 		font-size: 20px;
 		padding-left: 0;
 		line-height: 19px;
+		max-width: 252px;
 		white-space: nowrap;
 	}
 	
 	.product-info__wrap {
 		margin: 0;
+		max-width: 252px;
 	}
 	
 	.product-info__price {
@@ -255,6 +260,56 @@
 	.product-list__choice:hover {
 		transform: none;
 	}
+}
+
+@media only screen and (max-width: 544px) {
+	
+	.poster {
+		margin-bottom: 60px;
+	}
+
+	.poster-container {
+		height: 320px;
+	}
+
+	.poster-wrap {
+	background-position: left -150px center;
+	}
+
+	.poster-wrap__item {
+		padding: 80px 0 0 65px;
+	}
+
+	.poster-wrap__title {
+		font-size: 30px;
+		margin-bottom: 12px;
+		line-height: 29px;
+	}
+
+	.poster-wrap__link-desc {
+		font-size: 17px;
+		margin-right: 16px;
+	}
+
+	.product-title {
+    margin-bottom: 35px;
+  }
+
+	.product-title__name {
+    font-size: 26px;
+	}
+
+  .product-items {
+    justify-content: center;
+  }
+
+	.product-tile:not(.tile-2) {
+    margin-right: 0px;
+	}
+		.tile-2 {
+		display: none;
+	}
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -301,6 +356,10 @@
 
 	.poster {
 		margin-bottom: 36px;
+	}
+
+	.poster-wrap {
+	background-position: left -60px center;
 	}
 
 	.poster-container {
@@ -376,10 +435,6 @@
 		line-height: 19px;
 	}
 	
-	.tile-2 {
-		display: none;
-	}
-
 	.product-swatch {
 		margin-top: 3px;
 	}
