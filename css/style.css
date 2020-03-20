@@ -28,6 +28,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1030px;
+	padding: 0 15px;
 	height: 115px;
 	margin: 0 auto;
 }
@@ -181,6 +182,7 @@ a {
 	/*poster srtart*/
 .poster {
 	margin-bottom: 51px;
+	padding: 0 15px;
 }
 
 .poster-content {
@@ -246,6 +248,7 @@ a {
 
 .product-container {
 	max-width: 1030px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
