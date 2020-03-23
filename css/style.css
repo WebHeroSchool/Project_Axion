@@ -21,6 +21,7 @@ a {
 .header-content {
 	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header-container {
@@ -28,7 +29,6 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1030px;
-	padding: 0 15px;
 	height: 115px;
 	margin: 0 auto;
 }
@@ -182,12 +182,12 @@ a {
 	/*poster srtart*/
 .poster {
 	margin-bottom: 51px;
-	padding: 0 15px;
 }
 
 .poster-content {
 	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .poster-container{
@@ -237,18 +237,18 @@ a {
 
 	/*products start*/
 .product {
-	margin: 0 0 30px 0;
+	margin: 0 0 48px 0;
 	padding: 0;
 }
 
 .product-content {
 	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .product-container {
 	max-width: 1030px;
-	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -450,9 +450,384 @@ a {
 	opacity: .2;
 }
 
+ /*info start*/
+.info {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto 80px auto;
+}
+
+.info-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1030px;
+	height: 494px;
+	margin: 0 auto;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.info-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 950px;
+	margin: 0 40px;
+}
+
 .info__item {
+	width: 628px;
+	height: 345px;
+	outline: 8px solid rgba(255, 255, 255, 0.8);
+	margin-right: 50px;
+}
+.info__video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.info-wrap {
+	max-width: 266px;
+	margin-bottom: 12px;
+}
+
+.info-wrap__title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 27px;
+	margin-bottom: 13px;
+}
+
+.info-wrap__desc {
+	color: #fff;
+	font-size: 14px;
+	line-height: 17px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: 'GothamPro';
+}
+
+.info-btn {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.info-btn__link {
+	color: #fff;
+	font-size: 12px;
+	margin: 0 9px 0 0;
+	padding: 0;
+}
+/*info end*/
+
+/*stories start*/
+.storie {
+	max-width: 1170px;
+	margin: 0 auto 75px auto;
+	padding: 0 15px;
+}
+
+.storie-content {
+	max-width: 1030px;
+	height: 405px;
+	margin: 0 auto;
+}
+
+.storie__title {
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+.storie-container {
+	display: grid;
+	grid-template-columns: 6fr 1fr 6fr 1fr 6fr;
+	width: 100%;
+	max-height: 405px;
+	margin: 0;
+	padding: 0;
+}
+
+.storie-swiper {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.swiper-1 {
+	grid-column-start: 1;
+}
+
+.swiper-2 {
+	grid-column-start: 3;
+}
+
+.swiper-3 {
+	grid-column-start: 5;
+}
+
+.storie-link {
+	max-width: 100%;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+.storie-link__item {
+	max-width: 100%;
+	margin: 0;
+}
+
+.storie-wrap__subtitle {
+	font-size: 18px;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+.storie-wrap__desc {
+	font-family: 'GothamPro';
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0 auto 16px auto;
+}
+
+.storie-wrap-link {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.storie-wrap-link__desc {
+	font-size: 12px;
+	color: #000;
+}
+
+.storie__white-arrow {
 	display: none;
 }
+
+.storie-wrap__data {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	opacity: .3;
+}
+/*stories end*/
+
+/*gallery start*/
+.gallery {
+	max-width: 1170px;
+	margin: 0 auto 53px auto;
+	padding: 0 15px;
+}
+
+.gallery-content {
+	max-width: 1030px;
+	height: 200px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.gallery-wrap {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 0 8px 0;
+}
+
+.gallery-wrap__subtitle {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #000;
+	opacity: .3;
+	margin: 0;
+}
+
+.gallery-items {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	font-size: 0;
+	margin: 0 auto;
+	line-height: 0;
+}
+
+.gallery-items img {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.gallery-items img:last-child {
+	display: none;
+}
+/*gallery end*/
+
+/*footer start*/
+.footer {
+	background-color: #000;
+}
+
+.footer-content {
+	max-width: 1170px;
+	/*height: 296px;*/
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.footer-container {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding-top: 70px;
+	margin-bottom: 28px;
+}
+
+.footer-navigation {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 50px;
+	justify-content: space-between;
+	max-width: 780px;
+	height: 140px;
+	margin: 0 auto;
+}
+
+.footer-links {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.footer-links ul {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-links li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-list__title {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #fff;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 7px;
+	margin-left: 0;
+	white-space: nowrap;
+}
+
+.footer-list___link {
+	font-family: 'GothamPro';
+	font-size: 12px;
+	line-height: 11px;
+	color: #fff;
+	margin: 0;
+}
+
+.footer-list___link {
+	white-space: nowrap;
+}
+
+.singup-list__btn {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+	width: 136px;
+	height: 30px;
+	border: 1.5px #fff solid;
+	margin-top: 6px;
+	margin-bottom: 31px;
+}
+
+.singup-list__btn:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.footer-social {
+	white-space: nowrap;
+}
+
+.footer-social a {
+	font-family: 'icomoon';
+  font-size: 19px;
+	color: #fff;
+	margin: 0 18px 0 0;
+}
+
+.footer-social__facebook:before {
+  content: "\e901";
+}
+
+.footer-social__twitter:before {
+  content: "\e903";
+}
+
+.footer-social__Instagram:before {
+  content: "\e902";
+}
+
+.footer-social__Pinterest:before {
+  content: "\e904";
+}
+
+.footer-rights {
+	display: grid;
+	grid-template-columns: 10fr 1fr;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.footer-rights__desc {
+	display: grid;
+	align-content: center;
+	font-size: 12px;
+	font-family: 'GothamPro';
+	color: #fff;
+	margin: 0;
+	padding-left: 95px;
+  text-align: center;
+}
+
+.footer-logo {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo__subtitle {
+	font-size: 9px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+	white-space: nowrap;
+}
+/*footer end*/
+
 
 
 
